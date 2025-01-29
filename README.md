@@ -1,2 +1,75 @@
 # nvim.setup
-My neovim environment
+
+My Neovim environment
+
+## Setup Instructions
+
+To set up your development environment, install the following dependencies:
+
+### **1. Install Python & Virtual Environment Tools**
+
+```bash
+sudo apt install python3 python3-venv python3-pip
+```
+
+### **2. Install Node.js & npm**
+
+```bash
+sudo apt install nodejs npm
+```
+
+### **3. Install Neovim (Updated Version)**
+
+By default, WSL only installs up to Neovim 0.7.2, but you need version 0.9 or higher.  
+Follow this tutorial by **Axlefublr** to install the most updated version:  
+👉 [Watch the tutorial on YouTube](https://www.youtube.com/watch?v=2wapxsfzLho&ab_channel=Axlefublr%28she%5Cthey%29)
+
+#### **Important Note**
+
+The tutorial mostly works as shown, but if you install Neovim in the `.local/bin` folder (as the video suggests), you need to **add that folder to your PATH**.  
+Otherwise, Neovim won't work.
+
+To add it to your `PATH`, edit your `~/.bashrc` file:
+
+```bash
+nano ~/.bashrc
+```
+
+Then add the following line at the bottom:
+
+```bash
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+Save the file and apply the changes with:
+
+```bash
+source ~/.bashrc
+```
+
+### **3b. Install Neovim (Text Version)**
+
+If you don't want to follow along with the video above, I have outlined the content in the video in text form.
+
+1. Navigate to the Neovim GitHub releases section:
+   [Neovim Releases](https://github.com/neovim/neovim/releases/)
+
+2. Download `nvim-linux64.tar.gz` from the most recent release.
+
+3. Move it to your desired location. The video moves it to `~/.local/bin/` (this is also where mine exists).
+
+4. Extract the archive by running:
+
+   ```bash
+   tar xzvf nvim-linux64.tar.gz
+   ```
+
+   within this folder.
+
+5. Create a symbolic link with:
+
+   ```bash
+   ln -s ./nvim-linux64/bin/nvim ./nvim
+   ```
+
+6. Assuming that you added the path in `~/.bashrc` earlier, you can now type `nvim` in any file to open Neovim.
