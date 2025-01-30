@@ -18,6 +18,12 @@ sudo apt install python3 python3-venv python3-pip
 sudo apt install nodejs npm
 ```
 
+### **Small note**
+You might run into some issues with <leader>sg (or "grep") in the fuzzy finder, because ripgrep isn't installed. If you find that <leader>sg is presenting errors, below.
+```
+sudo apt install ripgrep
+```
+
 ### **3. Install Neovim (Updated Version)**
 
 By default, WSL only installs up to Neovim 0.7.2, but you need version 0.9 or higher.  
