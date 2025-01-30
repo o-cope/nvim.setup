@@ -1,6 +1,8 @@
 require 'core.options'
 require 'core.keymaps'
 
+require 'commands.ssm'
+
 vim.g.python3_host_prog = '/usr/bin/python3'
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
