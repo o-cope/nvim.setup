@@ -50,6 +50,9 @@ vim.keymap.set('n', '<leader>h', '<C-w>s', opts)      -- Split window horizontal
 vim.keymap.set('n', '<leader>se', '<C-w>=', opts)     -- make split windows equal
 vim.keymap.set('n', '<leader>xs', ':close<CR>', opts) -- close current split window
 
+-- Buffer + Window Management
+vim.keymap.set('n', '<leader>xx', ':Bdelete!<CR> :close<CR>', opts)
+
 -- Navigate splits
 vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', opts)
 vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', opts)
