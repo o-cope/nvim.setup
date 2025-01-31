@@ -1,8 +1,10 @@
+-- Adds basic options and keymaps for neovim
 require 'core.options'
 require 'core.keymaps'
-
+-- Adds custom command ssm for ssma file compilation
 require 'commands.ssm'
 
+-- Sets up plugin manager
 vim.g.python3_host_prog = '/usr/bin/python3'
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
@@ -16,6 +18,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
+  -- Add plugins here
   require 'plugins.none-ls',
   require 'plugins.neotree',
   require 'plugins.colourtheme',
