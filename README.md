@@ -77,3 +77,12 @@ If you don't want to follow along with the video above, I have outlined the cont
    ```
 
 6. Assuming that you added the path in `~/.bashrc` earlier, you can now type `nvim` in any file to open Neovim.
+
+## _Credits_
+
+Credits to both \*_Henry Misc_ for a lot of this setup. I yanked a lot of his plugin configs before modifying them, though I'm sure some are still the same.
+His video enabled me to setup my Neovim config before I was able to make my own (minor) modifications, and this would not be possible without him. Linked below are his Github and his Youtube where the video I followed along with originated from.
+
+[Henry's Github](https://github.com/hendrikmi)
+
+[Henry's Neovim Config Tutorial](https://www.youtube.com/watch?v=KYDG3AHgYEs&t=1569s&ab_channel=HenryMisc)
