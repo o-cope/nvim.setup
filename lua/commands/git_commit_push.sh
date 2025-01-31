@@ -7,9 +7,6 @@ Commit and push all changed files
 ENDUSE
 )
 
-# Assuming utils.sh provides functions like gitCurrentBranch, pvar_declare, etc.
-# . GIT/scripts/UTILS/SRC/utils.sh
-
 THE_CMD_LINE_MSG=""
 BRANCH=$(gitCurrentBranch)
 

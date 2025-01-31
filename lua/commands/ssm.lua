@@ -1,7 +1,7 @@
 vim.api.nvim_create_user_command('Ssm', function()
-  local file = vim.fn.expand '%:p'  -- Get full file path
+  local file = vim.fn.expand '%:p' -- Get full file path
   local dir = vim.fn.expand '%:p:h' -- Get directory of the file
-  local base_name = dir .. '/a'     -- Base filename
+  local base_name = dir .. '/a' -- Base filename
   local output_file = base_name .. '.out'
 
   -- Find a unique filename by incrementing (a1.out, a2.out, etc.)
@@ -12,7 +12,7 @@ vim.api.nvim_create_user_command('Ssm', function()
   end
 
   -- Run SSM to generate output
-  local cmd = string.format('java -jar ~/oli-env/uni/SSM.jar %s > %s 2>&1', file, output_file)
+  local cmd = string.format('java -jar ~/oli-env/compilers/SSM.jar %s > %s 2>&1', file, output_file)
   vim.fn.system(cmd)
 
   -- Check if output file was created
@@ -32,4 +32,3 @@ vim.api.nvim_create_user_command('Ssm', function()
     print '❌ Failed to generate output.'
   end
 end, { desc = 'Run current SSM file and open output correctly' })
-
