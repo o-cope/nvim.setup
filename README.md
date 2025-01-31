@@ -1,7 +1,3 @@
-# nvim.setup
-
-My Neovim environment
-
 ## Setup Instructions
 
 To set up your development environment, install the following dependencies:
@@ -19,7 +15,9 @@ sudo apt install nodejs npm
 ```
 
 ### **Small note**
+
 You might run into some issues with <leader>sg (or "grep") in the fuzzy finder, because ripgrep isn't installed. If you find that <leader>sg is presenting errors, below.
+
 ```
 sudo apt install ripgrep
 ```
